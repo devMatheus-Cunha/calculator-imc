@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/secundary.css">
+  <link rel="shortcut icon" href="/img/calculator-solid.svg" type="image/x-icon">
+  <title>Calculadora IMC</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>  
+
+<body>
+  <section class="sectionMain">
+      <div class="home">
+
+        <h1>Calculadora <span>IMC</span> <img src="/img/calculator-solid.svg" alt=""></h1>
+        <p>Preencha todos campos é veja seu Calculo IMC.</p>
+
+        <div class="calc">
+          <form action="" id="form">
+            <input type="text" max="200" name="peso" id="peso" placeholder="Peso (Kg)">
+
+            <input type="text" max="200" name="altura" id="altura" placeholder="Altura (cm)">
+
+            <input type="button" value="Calcular" id="calcular" />
+          </form>
+          <p><a href="./index.html"> <img src="./img/icon-back.svg" alt="">Voltar</a></p>
+        </div>
+      </div>
+
+      <div class="indexCover">
+        <div class="result">
+          <h2>Seu IMC</h2>
+          <p id="result"></p>
+          <p id="info"> </p>
+        </div>
+
+        <div class="table">
+          <table>
+            <tr>
+              <td class="level">Abaixo do Peso</td>
+              <td>
+                < 18.5</td> </tr> <tr>
+              <td class="level">Peso Ideal</td>
+              <td>18.5 - 24.9</td>
+            </tr>
+
+            <tr>
+              <td class="level">Sobrepeso</td>
+              <td>25 - 29.9</td>
+            </tr>
+
+            <tr>
+              <td class="level">Obesidade Grau I</td>
+              <td>30 - 34.9</td>
+            </tr>
+
+            <tr>
+              <td class="level">Obesidade Grau II</td>
+              <td>35 - 39.9</td>
+            </tr>
+
+            <tr>
+              <td class="level">Obesidade Grau III ou Mórbida</td>
+              <td> >= 40</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+  </section>
+  <script src="./js/index.js"></script>
+  <script>
+    // Mudança de pagina 
+    back.addEventListener('click', () => {
+      window.location.href = "./index.html"
+    })
+  </script>
+
+</body>
+
+</html>
